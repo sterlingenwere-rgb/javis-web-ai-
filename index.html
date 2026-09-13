@@ -15,8 +15,24 @@
   </button>
 
   <pre id="result"></pre>
+  <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
 
-  <script src="config.js"></script>
+const firebaseConfig = {
+  apiKey: "YOUR_FIREBASE_API_KEY",
+  authDomain: "admire-tech-hub.firebaseapp.com",
+  projectId: "admire-tech-hub",
+  storageBucket: "admire-tech-hub.firebasestorage.app",
+  messagingSenderId: "195526673927",
+  appId: "1:195526673927:web:e7de427ae207b37be14ca2"
+};
+
+initializeApp(firebaseConfig);
+
+console.log("JARVIS connected to Firebase");
+</script>
+
+<script src="script.js"></script>
   <script src="script.js"></script>
 
 </body>
