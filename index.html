@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JARVIS</title>
+  <title>JARVIS Web AI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>JARVIS Web AI</h1>
+
+  <h1>🤖 JARVIS Web AI</h1>
+
+  <textarea id="prompt" placeholder="Describe the website you want..."></textarea>
+
+  <button onclick="startGeneration()">
+    Generate Website
+  </button>
+
+  <pre id="result"></pre>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
