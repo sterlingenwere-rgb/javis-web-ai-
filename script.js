@@ -1,1 +1,1 @@
-// JARVIS V1
+console.log("JARVIS V1 is online 🚀");
