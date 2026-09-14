@@ -1,8 +1,13 @@
+import {
+  collection,
+  addDoc
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
 async function startGeneration() {
   const prompt = document.getElementById("prompt").value;
+  const result = document.getElementById("result");
 
-  document.getElementById("result").textContent =
-    "🤖 JARVIS is thinking...";
+  result.textContent = "🤖 Saving...";
 
   await addDoc(collection(window.db, "jarvis_projects"), {
     prompt: prompt,
@@ -10,6 +15,5 @@ async function startGeneration() {
     createdAt: new Date()
   });
 
-  document.getElementById("result").textContent =
-    "✅ Prompt saved to Firebase!";
+  result.textContent = "✅ Prompt saved!";
 }
