@@ -1,0 +1,14 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDtXNzQErFuX7g0mNPNR_FhR4vC2ObFsoA",
+  authDomain: "javis-v1.firebaseapp.com",
+  projectId: "javis-v1",
+  storageBucket: "javis-v1.firebasestorage.app",
+  messagingSenderId: "845808331602",
+  appId: "1:845808331602:web:f4355f6f00a817e174a88b"
+};
+
+const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
